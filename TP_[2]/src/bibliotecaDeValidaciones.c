@@ -117,7 +117,6 @@ int SoloLetras(char palabra[])
     {
         while(palabra[i]!='\0')
         {
-            //Tengo en cuenta los valores del codigo ascii para hacer la condicion
             if((palabra[i]!=' ')&&(palabra[i] < 'a'||  palabra[i] > 'z') && (palabra[i] < 'A' || palabra[i] > 'Z'))
             {
                 soloHayLetras=0;
@@ -150,5 +149,3 @@ int ordenarCadena(char cadena[])
     }
     return todoOk;
 }
-
-

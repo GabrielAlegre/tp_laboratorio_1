@@ -339,7 +339,7 @@ int modifyEmployee(eEmployee* list, int len)
 
 int sortEmployees(eEmployee* list, int len, int order)
 {
-    int todoOk=0;
+    int todoOk=-1;
     eEmployee auxiliar;
     if(list!=NULL && len>0)
     {
@@ -377,7 +377,7 @@ int sortEmployees(eEmployee* list, int len, int order)
                 printEmployees(list, len);
                 break;
         }
-        todoOk=1;
+        todoOk=0;
     }
     return todoOk;
 }

@@ -12,7 +12,7 @@
 #include <stdlib.h>
 #include "ArrayEmployees.h"
 #include "bibliotecaDeValidaciones.h"
-#define ELEMENTS 16
+#define ELEMENTS 1000
 
 int main()
 {
@@ -50,7 +50,7 @@ int main()
                 }
                 else
                 {
-                    printf("No hay ningun empleado para modificae, opcion 1 para dar de alta e ingresar un empleado\n");
+                    printf("No hay ningun empleado para modificar, opcion 1 para dar de alta e ingresar un empleado\n");
                 }
                 break;
 
