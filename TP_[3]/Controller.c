@@ -19,7 +19,7 @@ int controller_loadFromText(char* path , LinkedList* pArrayListEmployee)
 		{
 			if(parser_EmployeeFromText( pArchivo, pArrayListEmployee))
 			{
-				printf("Se a cargado la lista con exitosamente!\n");
+				printf("Se a cargado la lista exitosamente!\n");
 				todoOk=1;
 			}
 

@@ -29,6 +29,8 @@ int main()
             	}
             	else
             	{
+            		printf("Cargando lista...\n");
+            		printf("La lista puede tardar unos segundos en cargar, por favor espere...\n");
 					if(controller_loadFromText("data.csv",listaEmpleados))
 					{
 						cargoLista=1;
@@ -154,11 +156,13 @@ int main()
             		if(salir=='s')
             		{
             			employee_reiniciarUltimoId(idInicializado);
+            			ll_deleteLinkedList(listaEmpleados);
             		}
             	}
             	else
             	{
             		validarCaracter(&salir, "Esta seguro que desea salir? s/n?: ", "Respuesta invalida. 's' para salir. 'n' para cancelar la salida: ", 's', 'n');
+            		ll_deleteLinkedList(listaEmpleados);
             	}
 
                 break;
